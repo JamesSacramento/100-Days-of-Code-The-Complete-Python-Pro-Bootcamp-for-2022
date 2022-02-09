@@ -37,18 +37,14 @@ else:
 
   print("Computer Choose:")
   enemy_choice = random.randint(0,2)
+
   print(images[enemy_choice])
 
-  #Logic
   if userI == enemy_choice:
     print("It's a draw")
-  elif userI == 2 and enemy_choice == 1:
-    print("You Win")
-  elif userI == 1 and enemy_choice == 0:
+  elif userI > enemy_choice:
     print("You Win")
   elif userI == 0 and enemy_choice == 2:
     print("You Win")
   else:
     print("You Lose")
-
-#Rock crushes scissors, scissors cut paper, and paper covers rock
