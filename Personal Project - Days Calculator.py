@@ -7,7 +7,7 @@ import datetime
 days_100 = 100
 date_today = datetime.date.today()
 start_date = datetime.date(2022, 2, 3)
-days_done = int(input("How many days are done?"))
+days_done = int(input("How many days are done? "))
 
 # Formulas
 days_elapsed = date_today - start_date
@@ -21,3 +21,5 @@ days_crammed = days_elapsed_int - days_done
 print(f"Days Elapsed: {days_elapsed_int}")
 print(f"Days Left: {days_left}")
 print(f"Days to be Crammed to other days: {days_crammed}")
+
+input("Press any key to exit: ")
