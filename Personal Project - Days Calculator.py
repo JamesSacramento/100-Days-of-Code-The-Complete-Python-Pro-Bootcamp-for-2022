@@ -22,4 +22,4 @@ print(f"Days Elapsed: {days_elapsed_int}")
 print(f"Days Left: {days_left}")
 print(f"Days to be Crammed to other days: {days_crammed}")
 
-input("Press any key to exit: ")
+input("Enter any key to exit: ")
