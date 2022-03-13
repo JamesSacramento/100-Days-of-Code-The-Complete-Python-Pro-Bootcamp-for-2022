@@ -18,9 +18,6 @@ logo = """
 | |___|___|___| |___| |  '----------------'  '----------------'  '----------------'  '----------------' 
 |_____________________|
 """
-
-print(logo)
-
 #Calculator
 
 #add function
@@ -44,7 +41,7 @@ operations = {
 }
 def calculatorFunction():
     print(logo)
-    num1 = int(input("What's the first number? "))
+    num1 = float(input("What's the first number? "))
     for key in operations:
         print(key)
 
@@ -52,7 +49,7 @@ def calculatorFunction():
 
     while continueCalc:
         operation_symbol = input("Pick an operation? ")
-        num2 = int(input("What's the next number? "))
+        num2 = float(input("What's the next number? "))
         calculation_f = operations[operation_symbol]
         answer = calculation_f(num1, num2)
 
